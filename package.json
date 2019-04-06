@@ -1,0 +1,20 @@
+{
+  "name": "typescript-nodejs",
+  "version": "1.0.0",
+  "description": "Node.js with TypeScript",
+  "main": "src/main.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build:live",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec ts-node src/main.ts"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript"
+  ],
+  "dependencies": {
+    "@types/node": "^11.11.3"
+  },
+  "author": "Suleyman Yilmaz",
+  "license": "ISC"
+}
